@@ -6,6 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    max-width: 1200px;
     margin: 0 auto;
     background-color: #313131;
     color: #FFF;
@@ -15,7 +16,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 25px;
-    padding: 10px 0;
+    padding: 20px 0 10px;
 }
 img.avatar{
     width: 300px;
@@ -45,21 +46,40 @@ nav li a{
 }
 main{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 410px 410px;
     justify-content: center;
-    gap: 20px;
+    column-gap: 30px;
+    row-gap: 10px;
 }
 section{
     margin-top: 15px;
 }
+section:not(:last-of-type){
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+
+    max-width: 410px;
+}
+section:not(:last-of-type)::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    bottom: -5px;
+    right: -8px;
+    z-index: -1;
+    border: 3px double #bababa;
+}
 #code-example{
     grid-column: span 2;
+    margin-bottom: 10px;
 }
 #code-example pre{
     margin: 10px 0;
     padding-left: 20px;
-    background-color: #191919;
-    border-radius: 12.5px;
+    background-color: #0d0d0d;
+    border-radius: 15px;
 }
 footer{
     justify-content: center;
