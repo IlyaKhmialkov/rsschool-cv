@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My CV</h1>
+        <h2>Khmialkov Ilya</h2>
+    </header>
+    <main>
+        <img src="img.jpg" alt="my picture">
+        <section>
+            <h2>Contacts</h2>
+            <ul>
+                <li>Telegram @ilyakhmialkov</li>
+                <li>Github @IlyaKhmialkov</li>
+                <li>Gmail <a href="mailto:ilyakhmilakov@gmail.com">ilyakhmilakov@gmail.com</a></li>
+                <li>Discord ilya_khmialkov</li>
+            </ul>
+        </section>
+        <section>
+            <h2>About me</h2>
+            <ul>
+                <li>i'm a student</li>
+                <li>my goal is to improve my front-end development skills</li>
+                <li>i can quickly absorb new information</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Code example</h2>
+            <code>
+                <pre>
+function toCamelCase(str){
+    if(!str.includes('-') && !str.includes('_')){
+        return str;
+    }
+    let words;
+    if(str.includes('-')){
+        words = str.split('-');
+    } else{
+        words = str.split('_');
+    }
+    for(let i = 0; i &lt; words.length; i++){
+        if(i != 0){
+            words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+        }
+    }
+    if(str.includes('_')){
+        const newStr =  words.join('');
+        let newWords = newStr.split('_');
+        for(let i = 0; i &lt; newWords.length; i++){
+            if(i != 0){
+                newWords[i] = newWords[i].charAt(0).toUpperCase() + newWords[i].slice(1);
+            }
+        }
+        return newWords.join('');
+    } else{
+        return words.join('');
+    }
+}
+                </pre>
+            </code>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/IlyaKhmialkov/card-game.github.io">card game (html, css, js)</a></li>
+                <li><a href="https://github.com/IlyaKhmialkov/second-course-project">course project - site of company (html, css, js, figma)</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>Belarusian Russian University 2nd course</li>
+            </ul>
+        </section>
+        <section>
+            <h2>English proficiency level</h2>
+            <ul>
+                <li>A2</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
