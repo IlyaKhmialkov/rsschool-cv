@@ -8,12 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>My CV</h1>
-        <h2>Khmialkov Ilya</h2>
+        <h1>Khmialkov Ilya</h1>
+        <img src="avatar.jpg" alt="my avatar" class="avatar">
     </header>
-    <main>
-        <img src="img.jpg" alt="my picture">
-        <section>
+    <nav>
+        <ul>
+            <li><a href="#contacts">contacts</a></li>
+            <li><a href="#about-me">about me</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#english">english</a></li>
+            <li><a href="#code-example">code example</a></li>
+        </ul>
+    </nav>
+    <main>        
+        <section id="contacts">
             <h2>Contacts</h2>
             <ul>
                 <li>Telegram @ilyakhmialkov</li>
@@ -22,7 +32,7 @@
                 <li>Discord ilya_khmialkov</li>
             </ul>
         </section>
-        <section>
+        <section id="about-me">
             <h2>About me</h2>
             <ul>
                 <li>i'm a student</li>
@@ -30,7 +40,7 @@
                 <li>i can quickly absorb new information</li>
             </ul>
         </section>
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>C#</li>
@@ -40,8 +50,27 @@
                 <li>GitHub</li>
                 <li>Node.js</li>
             </ul>
+        </section>        
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/IlyaKhmialkov/card-game.github.io">card game (html, css, js)</a></li>
+                <li><a href="https://github.com/IlyaKhmialkov/second-course-project">course project - site of company (html, css, js, figma)</a></li>
+            </ul>
         </section>
-        <section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Belarusian Russian University 2nd course</li>
+            </ul>
+        </section>
+        <section id="english">
+            <h2>English proficiency level</h2>
+            <ul>
+                <li>A2</li>
+            </ul>
+        </section>
+        <section id="code-example">
             <h2>Code example</h2>
             <pre>
                 <code>
@@ -76,25 +105,12 @@ function toCamelCase(str){
             </code>
         </pre>
         </section>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/IlyaKhmialkov/card-game.github.io">card game (html, css, js)</a></li>
-                <li><a href="https://github.com/IlyaKhmialkov/second-course-project">course project - site of company (html, css, js, figma)</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>Belarusian Russian University 2nd course</li>
-            </ul>
-        </section>
-        <section>
-            <h2>English proficiency level</h2>
-            <ul>
-                <li>A2</li>
-            </ul>
-        </section>
     </main>
+    <footer>
+        <p>Github @IlyaKhmialkov</p>
+        <p>2024</p>
+        <img src="RS-School-logo.svg" alt="RS School logo" class="RS-School-logo">
+        <a href="https://rs.school/courses/javascript-preschool-ru">join RS School</a>
+    </footer>
 </body>
 </html>
