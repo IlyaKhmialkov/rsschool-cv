@@ -3,7 +3,7 @@
 ## Khmialkov Ilya 
 --- 
  
-![My picture](img.jpg)
+![My picture](assets/avatar.jpg)
  
 --- 
  
