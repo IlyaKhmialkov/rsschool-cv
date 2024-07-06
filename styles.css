@@ -63,12 +63,16 @@ section{
 }
 footer{
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     display: flex;
 
     padding: 15px 0 10px;
     border-top: 2px solid #9c9c9c;
+}
+.RS-School-logo{
+    height: 50px;
+    width: auto;
 }
 a{
     color: rgb(179, 179, 255);   
