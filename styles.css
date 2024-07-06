@@ -1,14 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
-    margin: 2% 5% 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #313131;
     color: #FFF;
 }
-section:not(:first-of-type){
-    border-top: 2px solid #9c9c9c;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0 10px;
 }
-img{
+img.avatar{
     width: 300px;
     height: auto;
+    border-radius: 150px;
+}
+nav ul{
+    padding: 15px;
+    border-bottom: 2px solid #9c9c9c;
+    border-top: 2px solid #9c9c9c;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+nav li{
+    list-style: none;
+    background-color: #bababa;
+    padding: 4px;
+    border-radius: 8px;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    font-size: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 410px 410px;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 10px;
+}
+section{
+    margin-top: 15px;
+}
+section:not(:last-of-type){
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+
+    max-width: 410px;
+}
+section:not(:last-of-type)::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    bottom: -5px;
+    right: -8px;
+    z-index: -1;
+    border: 3px double #bababa;
+}
+#code-example{
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+#code-example pre{
+    margin: 10px 0;
+    padding-left: 20px;
+    background-color: #0d0d0d;
+    border-radius: 15px;
+}
+footer{
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+
+    padding: 15px 0 10px;
+    border-top: 2px solid #9c9c9c;
+}
+.RS-School-logo{
+    height: 50px;
+    width: auto;
 }
 a{
     color: rgb(179, 179, 255);   
