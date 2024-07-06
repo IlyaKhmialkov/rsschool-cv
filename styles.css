@@ -1,0 +1,15 @@
+body{
+    margin: 2% 5% 0 5%;
+    background-color: #313131;
+    color: #FFF;
+}
+section:not(:first-of-type){
+    border-top: 2px solid #9c9c9c;
+}
+img{
+    width: 300px;
+    height: auto;
+}
+a{
+    color: rgb(179, 179, 255);   
+}
